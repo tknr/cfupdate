@@ -1,8 +1,8 @@
 #!/bin/bash -x
 cp cfupdate.service /etc/systemd/system/
 cp cfupdate.timer /etc/systemd/system/
-cp cfupdator /usr/local/bin/
-chmod +x /usr/local/bin/cfupdator
+cp cfupdater /usr/local/bin/
+chmod +x /usr/local/bin/cfupdater
 
 systemctl enable cfupdate.timer
 systemctl start cfupdate.timer
