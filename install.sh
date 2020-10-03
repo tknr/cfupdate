@@ -1,4 +1,5 @@
 #!/bin/bash -x
+cd `dirname $0`
 cp cfupdate.service /etc/systemd/system/
 cp cfupdate.timer /etc/systemd/system/
 ln -s cfupdater /usr/local/bin/
